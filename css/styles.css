@@ -1,0 +1,268 @@
+body {
+  /*padding-top: 80px;*/
+}
+h1 {
+  color: #333f48;
+  font-size: 40px;
+}
+h2 {
+  color: #482e74;
+  font-size: 24px;
+}
+h3 {
+  color: #333f48;
+  font-size: 18px;
+}
+h4 {
+  color: #482e74;
+  font-size: 16px;
+}
+ul {
+  list-style: none;
+}
+.navbar-brand {
+  font-size: 22px;
+  color: #482e74;
+}
+#submit-button {
+  padding: 5px 10px;
+  border: 2px solid #482e74;
+  border-radius: 3px;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar li.active {
+  background-color: #482e74;
+}
+.navbar li.active a {
+  color: white;
+}
+.navbar li a:hover {
+  background-color: #5c4b73;
+  color: white;
+}
+.navlink {
+  color: #333f48;
+}
+.navbar-toggle {
+  border: solid #482e74 1px;
+  background-color: transparent;
+}
+.navbar-toggle .icon-bar {
+  background-color: #482e74;
+}
+.navbar-solid {
+  background-color: #ffffff;
+}
+#breadcrumb {
+  height: 30px;
+  background-color: #482e74;
+  opacity: .9;
+}
+/*including this because having href="" conflicts with onclick anonymous function*/
+#contact-link {
+  cursor: pointer;
+}
+.main {
+  padding-top: 30px;
+}
+.main .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#hero {
+  background-image: url("../../img/water1-l.jpg");
+  background-size: cover;
+  min-height: 600px;
+}
+.logo-img {
+  /*opacity:.5;*/
+  width: 30px;
+}
+.impact-heading {
+  text-align: center;
+  margin: auto;
+  display: relative;
+  bottom: 0;
+  padding-top: 70px;
+}
+#schedule {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#schedule ul {
+  padding-left: 10px;
+  width: 250px;
+}
+#schedule ul li {
+  text-align: left;
+}
+#schedule ul li h4 {
+  text-align: center;
+}
+#schedule .schedule-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.schedule-card {
+  border: 1px solid #4f5f6b;
+  border-radius: 3px;
+  margin: 20px;
+  min-height: 125px;
+}
+#hero-2 {
+  /*background-image: url("../../img/ground1-l.jpg");*/
+  /*background-size: cover;*/
+  min-height: 600px;
+}
+#hero-2 .impact-heading {
+  position: relative;
+  padding-top: 0;
+  bottom: -400px;
+}
+#hero-2 .impact-heading h1,
+#hero-2 .impact-heading h3 {
+  color: #ffffff;
+}
+#about {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#about p {
+  width: 50%;
+  margin: auto;
+}
+#contact-me {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#yogi-info {
+  padding-top: 30px;
+}
+#yogi-info form {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  padding-left: 10%;
+}
+#yogi-info form label {
+  width: 200px;
+  vertical-align: top;
+}
+#yogi-info form input {
+  width: 200px;
+}
+#yogi-info form textarea {
+  width: 200px;
+}
+#yogi-info form div {
+  padding: 10px 0;
+}
+#class-descriptions {
+  /*background-image: url("../../img/coral1-l.jpg");
+	background-size: cover;*/
+  min-height: 600px;
+}
+#class-descriptions h2,
+#class-descriptions h3,
+#class-descriptions p {
+  color: #ffffff;
+}
+#class-descriptions.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+#class-descriptions .container {
+  padding-top: 25px;
+}
+.section-break {
+  border-top: 5px solid #482e74;
+  height: 150px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.section-break div {
+  text-align: center;
+  padding-top: 60px;
+}
+.opaque-div {
+  background-color: #482e74;
+  opacity: .7;
+  min-height: 600px;
+  padding-top: 50px;
+}
+
+
+/* This is obviously the more complex way to do this. Could use just  $('#hero-logo').fadeIn(4000).  */
+#hero-logo {
+  -webkit-animation: fadein 6s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 6s;
+  /* Internet Explorer */
+  -o-animation: fadein 6s;
+  /* Opera < 12.1 */
+  animation: fadein 6s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Everything XS and below: 767px and fewer */
+@media (max-width: 767px) {
+  #hero h1,
+  #hero h3 {
+    color: white;
+  }
+  #about p {
+    width: 75%;
+    margin: auto;
+  }
+}
